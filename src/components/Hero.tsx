@@ -39,7 +39,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               asChild
-              className="text-lg px-8 py-3 hover:bg-primary/5 border-primary/20"
+              className="text-lg px-8 py-3 border-primary/20"
             >
               <a 
                 href="https://github.com/jeamlit/jeamlit"
