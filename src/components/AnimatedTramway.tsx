@@ -14,7 +14,7 @@ const AnimatedTramway = () => {
       </div>
       
       {/* Animated tramway hanging from cable */}
-      <div className="absolute top-12 animate-tramway-move">
+      <div className="absolute top-14 animate-tramway-move">
         <div className="relative">
           {/* Main tramway emoji hanging below the cable */}
           <div className="relative">
