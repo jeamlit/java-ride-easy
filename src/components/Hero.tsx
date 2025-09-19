@@ -29,7 +29,7 @@ const Hero = () => {
               asChild
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-3"
             >
-              <a href="https://docs.jeamlit.io" className="flex items-center">
+              <a href="https://docs.streamlit.io/get-started" className="flex items-center">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
