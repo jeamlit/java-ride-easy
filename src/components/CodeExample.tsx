@@ -103,10 +103,13 @@ public class MyApp {
             Ready to build?
           </h3>
           <Button 
+            asChild
             size="lg" 
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8"
           >
-            Get Started
+            <a href="https://docs.jeamlit.io">
+              Get Started
+            </a>
           </Button>
         </div>
       </div>
