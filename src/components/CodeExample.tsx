@@ -33,7 +33,7 @@ public class MyApp {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Code block */}
-          <div className="relative -mx-4 sm:mx-0">
+          <div className="relative -mx-6 sm:mx-0">
             <div className="absolute top-4 left-4 flex space-x-2">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
