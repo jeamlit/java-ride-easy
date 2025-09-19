@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
             <div className="text-3xl mb-4">🎯</div>
             <h3 className="text-lg font-semibold mb-2">Interactive</h3>
-            <p className="text-muted-foreground">Build reactive UIs with automatic updates</p>
+            <p className="text-muted-foreground">No hook, no event handling. The simplest reactive model, inspired by streamlit.</p>
           </div>
         </div>
       </div>
