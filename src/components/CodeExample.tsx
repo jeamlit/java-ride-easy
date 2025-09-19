@@ -33,14 +33,14 @@ public class MyApp {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Code block */}
-          <div className="relative -mx-4 sm:-mx-6 lg:mx-0">
-            <div className="absolute top-4 left-4 flex space-x-2">
+          <div className="relative -mx-4 sm:mx-0 lg:mx-0">
+            <div className="absolute top-4 left-4 flex space-x-2 z-10">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             
-            <div className="bg-[hsl(var(--code-bg))] p-3 sm:p-6 pt-6 sm:pt-12 rounded-xl shadow-soft overflow-hidden">
+            <div className="bg-[hsl(var(--code-bg))] p-4 sm:p-6 pt-8 sm:pt-12 rounded-none sm:rounded-xl shadow-soft overflow-hidden">
               <SyntaxHighlighter
                 language="java"
                 style={oneDark}
