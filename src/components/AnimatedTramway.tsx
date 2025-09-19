@@ -30,7 +30,27 @@ const AnimatedTramway = () => {
       </div>
 
       {/* Second animated tramway with offset */}
-      <div className="absolute top-10 animate-tramway-move" style={{ animationDelay: '-5s' }}>
+      <div className="absolute top-10 animate-tramway-move" style={{ animationDelay: '-4s' }}>
+        <div className="relative">
+          {/* Second tramway emoji hanging below the cable */}
+          <div className="relative">
+            <span className="text-6xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
+          </div>
+        </div>
+      </div>
+
+      {/* third animated tramway with offset */}
+      <div className="absolute top-10 animate-tramway-move" style={{ animationDelay: '-8s' }}>
+        <div className="relative">
+          {/* Second tramway emoji hanging below the cable */}
+          <div className="relative">
+            <span className="text-6xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 4th animated tramway with offset */}
+      <div className="absolute top-10 animate-tramway-move" style={{ animationDelay: '-12s' }}>
         <div className="relative">
           {/* Second tramway emoji hanging below the cable */}
           <div className="relative">
