@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <span className="text-2xl transform scale-y-[-1]">🚡</span>
+            <span className="text-2xl transform scale-x-[-1]">🚡</span>
             <span className="text-xl font-bold text-foreground">Jeamlit</span>
           </div>
           

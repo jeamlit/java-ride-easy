@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl transform scale-y-[-1]">🚡</span>
+              <span className="text-2xl transform scale-x-[-1]">🚡</span>
               <span className="text-xl font-bold text-foreground">Jeamlit</span>
             </div>
             <p className="text-muted-foreground">

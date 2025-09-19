@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center mb-6">
-            <span className="text-6xl mr-3 transform scale-y-[-1]">🚡</span>
+            <span className="text-6xl mr-3 transform scale-x-[-1]">🚡</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
               Jeamlit
             </h1>
