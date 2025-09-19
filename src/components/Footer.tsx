@@ -54,7 +54,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Jeamlit. Built with ❤️ for Java developers.
+            © 2025 Jeamlit.
           </p>
         </div>
       </div>
