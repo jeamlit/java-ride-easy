@@ -14,11 +14,8 @@ const AnimatedTramway = () => {
       </div>
       
       {/* Animated tramway hanging from cable */}
-      <div className="absolute top-16 animate-tramway-move">
+      <div className="absolute top-12 animate-tramway-move">
         <div className="relative">
-          {/* Tramway cable connection hanging down from rope */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-0.5 h-8 bg-muted-foreground/60"></div>
-          
           {/* Main tramway emoji hanging below the cable */}
           <div className="relative">
             <span className="text-6xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
