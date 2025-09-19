@@ -13,10 +13,20 @@ const AnimatedTramway = () => {
         <div className="absolute top-2 left-0 w-1 h-1 bg-primary/40 rounded-full animate-float-right" style={{ animationDelay: '3s' }}></div>
       </div>
       
-      {/* Animated tramway hanging from cable */}
+      {/* First animated tramway hanging from cable */}
       <div className="absolute top-10 animate-tramway-move">
         <div className="relative">
           {/* Main tramway emoji hanging below the cable */}
+          <div className="relative">
+            <span className="text-6xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Second animated tramway with offset */}
+      <div className="absolute top-10 animate-tramway-move" style={{ animationDelay: '-5s' }}>
+        <div className="relative">
+          {/* Second tramway emoji hanging below the cable */}
           <div className="relative">
             <span className="text-6xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
           </div>
