@@ -84,6 +84,20 @@ export default {
           "0%, 100%": { boxShadow: "0 0 20px hsl(var(--primary) / 0.2)" },
           "50%": { boxShadow: "0 0 40px hsl(var(--primary) / 0.4)" },
         },
+        "tramway-move": {
+          "0%": { transform: "translateX(-100px) translateY(-50%)" },
+          "100%": { transform: "translateX(calc(100vw - 50px)) translateY(-50%)" },
+        },
+        "float-right": {
+          "0%": { transform: "translateX(-20px)", opacity: "0" },
+          "10%": { opacity: "1" },
+          "90%": { opacity: "1" },
+          "100%": { transform: "translateX(100vw)", opacity: "0" },
+        },
+        "stream": {
+          "0%": { opacity: "1", transform: "translateX(0)" },
+          "100%": { opacity: "0", transform: "translateX(-20px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -91,6 +105,9 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-in": "slide-in 0.6s ease-out",
         "glow": "glow 2s ease-in-out infinite",
+        "tramway-move": "tramway-move 8s ease-in-out infinite",
+        "float-right": "float-right 4s linear infinite",
+        "stream": "stream 0.6s ease-out infinite",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",

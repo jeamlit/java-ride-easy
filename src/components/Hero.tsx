@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
+import AnimatedTramway from "@/components/AnimatedTramway";
 
 const Hero = () => {
   return (
@@ -18,6 +19,9 @@ const Hero = () => {
             <br />
             <span className="text-primary font-semibold">Streamlit for Java developers.</span>
           </p>
+          
+          {/* Animated Tramway */}
+          <AnimatedTramway />
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
