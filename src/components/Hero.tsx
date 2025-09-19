@@ -59,7 +59,7 @@ const Hero = () => {
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
             <div className="text-3xl mb-4">⚡</div>
             <h3 className="text-lg font-semibold mb-2">Fast Development</h3>
-            <p className="text-muted-foreground">Create data apps with just a few lines of Java code. Run them standalone or embedded in your framework.</p>
+            <p className="text-muted-foreground">Create an interactive data app with a single class and just a few lines of code. Run the app standalone or embedded in your framework.</p>
           </div>
           
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
