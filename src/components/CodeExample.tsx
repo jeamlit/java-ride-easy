@@ -1,5 +1,6 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Button } from '@/components/ui/button';
 
 const CodeExample = () => {
   const codeString = `import io.jeamlit.core.Jt;
@@ -94,6 +95,22 @@ public class MyApp {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* Get Started CTA */}
+        <div className="mt-16 bg-primary rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+            Ready to transform your Java apps?
+          </h3>
+          <p className="text-primary-foreground/90 mb-6 max-w-lg mx-auto">
+            Start building interactive web applications with minimal code changes.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8"
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </section>
