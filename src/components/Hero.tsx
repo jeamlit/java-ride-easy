@@ -65,7 +65,7 @@ const Hero = () => {
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
             <div className="text-3xl mb-4">☕</div>
             <h3 className="text-lg font-semibold mb-2">Pure Java</h3>
-            <p className="text-muted-foreground">Leverage the power and familiarity of Java</p>
+            <p className="text-muted-foreground">Leverage the power, ecosystem and familiarity of Java</p>
           </div>
           
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
