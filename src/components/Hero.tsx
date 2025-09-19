@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="text-xl sm:text-2xl text-muted-foreground mb-2 max-w-3xl mx-auto">
             Build interactive data applications with Java, effortlessly.
             <br />
-            <span className="text-primary font-semibold">Streamlit for the rest of us, Java developers.</span>
+            <span className="text-primary font-semibold">Streamlit for the Java developers.</span>
           </p>
           
           {/* Animated Tramway */}
