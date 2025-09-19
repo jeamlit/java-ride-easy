@@ -3,7 +3,7 @@ const AnimatedTramway = () => {
     <div className="relative w-full h-32 mb-8 overflow-hidden">
       
       {/* Cable line at the top */}
-      <div className="absolute top-8 left-0 right-0">
+      <div className="absolute top-4 left-0 right-0">
         <div className="h-0.5 bg-gradient-to-r from-primary/20 via-primary to-primary/20 relative">
         </div>
         
@@ -14,7 +14,7 @@ const AnimatedTramway = () => {
       </div>
       
       {/* Animated tramway hanging from cable */}
-      <div className="absolute top-14 animate-tramway-move">
+      <div className="absolute top-10 animate-tramway-move">
         <div className="relative">
           {/* Main tramway emoji hanging below the cable */}
           <div className="relative">
