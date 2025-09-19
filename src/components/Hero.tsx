@@ -4,7 +4,7 @@ import AnimatedTramway from "@/components/AnimatedTramway";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-subtle">
+    <section className="pt-32 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-subtle">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center mb-6">
