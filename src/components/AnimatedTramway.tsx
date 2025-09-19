@@ -22,6 +22,14 @@ const AnimatedTramway = () => {
           </div>
         </div>
       </div>
+
+      {/* Progressive alpha fade edges */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Left fade */}
+        <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-background to-transparent"></div>
+        {/* Right fade */}
+        <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-background to-transparent"></div>
+      </div>
     </div>
   );
 };
