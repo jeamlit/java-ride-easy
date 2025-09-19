@@ -1,6 +1,6 @@
 const AnimatedTramway = () => {
   return (
-    <div className="relative w-full h-32 mb-8 overflow-hidden">
+    <div className="relative w-full h-32 mb-1 overflow-hidden">
       
       {/* Cable line at the top */}
       <div className="absolute top-4 left-0 right-0">
