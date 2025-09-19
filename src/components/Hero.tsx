@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
             <div className="text-3xl mb-4">🧠</div>
             <h3 className="text-lg font-semibold mb-2">Easy on your brain</h3>
-            <p className="text-muted-foreground">No event handling. No boilerplate. No abstractions. The simplest reactive model ever.</p>
+            <p className="text-muted-foreground">No event handling. No boilerplate. No abstraction. The simplest reactive model ever.</p>
           </div>
         </div>
       </div>
