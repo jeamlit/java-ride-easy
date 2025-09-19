@@ -50,14 +50,6 @@ const AnimatedTramway = () => {
           </div>
         </div>
       </div>
-      
-      {/* Data metrics floating around */}
-      <div className="absolute top-2 left-1/3 text-xs text-muted-foreground/60 animate-fade-in" style={{ animationDelay: '2s' }}>
-        Processing...
-      </div>
-      <div className="absolute bottom-2 right-1/3 text-xs text-muted-foreground/60 animate-fade-in" style={{ animationDelay: '4s' }}>
-        Real-time data
-      </div>
     </div>
   );
 };
