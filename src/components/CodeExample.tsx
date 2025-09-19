@@ -21,38 +21,18 @@ const CodeExample = () => {
             </div>
             
             <pre className="bg-[hsl(var(--code-bg))] text-[hsl(var(--code-text))] p-6 pt-12 rounded-xl shadow-soft overflow-x-auto">
-              <code>{`import io.jeamlit.Jeamlit;
-import io.jeamlit.components.*;
-
-public class MyApp {
-    public static void main(String[] args) {
-        Jeamlit app = new Jeamlit("My Data App");
-        
-        // Add title and description
-        app.title("📊 Sales Dashboard");
-        app.write("Welcome to your Java data app!");
-        
-        // Create interactive widgets
-        int threshold = app.slider(
-            "Threshold", 0, 100, 50
-        );
-        
-        // Display data
-        List<Integer> data = Arrays.asList(
-            45, 67, 23, 89, 34, 78, 56
-        );
-        
-        app.lineChart("Sales Data", data);
-        app.metric("Above Threshold", 
-            data.stream()
-                .mapToInt(Integer::intValue)
-                .filter(x -> x > threshold)
-                .count()
-        );
-        
-        app.run();
-    }
-}`}</code>
+              <code>{`import io.jeamlit.core.Jt;
+                
+                public class MyApp {
+                    public static void main(String[] args) {
+                        double value = Jt.slider("Temperature")
+                            .min(0)
+                            .max(100)
+                            .value(50)
+                            .use();
+                        Jt.text("Temperature: " + value).use();
+                    }
+                }`}</code>
             </pre>
           </div>
           
