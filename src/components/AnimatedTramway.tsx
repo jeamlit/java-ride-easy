@@ -21,7 +21,7 @@ const AnimatedTramway = () => {
           
           {/* Main tramway emoji hanging below the cable */}
           <div className="relative mt-8">
-            <span className="text-4xl transform scale-x-[-1] animate-glow block" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent' }}>🚡</span>
+            <span className="text-4xl transform scale-x-[-1] animate-glow block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
             
             {/* Data stream effect behind tramway */}
             <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 flex space-x-1">
