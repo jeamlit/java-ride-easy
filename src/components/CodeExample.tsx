@@ -1,4 +1,20 @@
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 const CodeExample = () => {
+  const codeString = `import io.jeamlit.core.Jt;
+
+public class MyApp {
+  public static void main(String[] args) {
+    double value = Jt.slider("Temperature")
+      .min(0)
+      .max(100) 
+      .value(50)
+      .use();
+    Jt.text("Temperature: " + value).use();
+  }
+}`;
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
@@ -20,20 +36,27 @@ const CodeExample = () => {
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             
-            <pre className="bg-[hsl(var(--code-bg))] text-[hsl(var(--code-text))] p-4 sm:p-6 pt-8 sm:pt-12 rounded-xl shadow-soft overflow-x-auto text-xs sm:text-sm">
-              <code className="break-words whitespace-pre-wrap sm:whitespace-pre">{`import io.jeamlit.core.Jt;
-
-public class MyApp {
-  public static void main(String[] args) {
-    double value = Jt.slider("Temperature")
-      .min(0)
-      .max(100) 
-      .value(50)
-      .use();
-    Jt.text("Temperature: " + value).use();
-  }
-}`}</code>
-            </pre>
+            <div className="bg-[hsl(var(--code-bg))] p-4 sm:p-6 pt-8 sm:pt-12 rounded-xl shadow-soft overflow-x-auto">
+              <SyntaxHighlighter
+                language="java"
+                style={oneDark}
+                customStyle={{
+                  background: 'transparent',
+                  padding: 0,
+                  margin: 0,
+                  fontSize: 'inherit',
+                }}
+                codeTagProps={{
+                  style: {
+                    fontSize: 'inherit',
+                    fontFamily: 'inherit',
+                  }
+                }}
+                className="text-xs sm:text-sm"
+              >
+                {codeString}
+              </SyntaxHighlighter>
+            </div>
           </div>
           
           {/* Benefits */}
