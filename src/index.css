@@ -39,8 +39,8 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-hero: linear-gradient(135deg, 0 100% 65%, 10 95% 70%);
-    --gradient-subtle: linear-gradient(180deg, 0 0% 100%, 210 40% 98%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 100% 65%), hsl(10 95% 70%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
     --shadow-soft: 0 4px 20px -4px hsl(0 100% 65% / 0.15);
     --shadow-glow: 0 0 40px hsl(0 100% 65% / 0.2);
     --java-orange: 15 90% 55%;
@@ -94,8 +94,8 @@ All colors MUST be HSL.
     --input: 217.2 32.6% 17.5%;
     --ring: 0 100% 65%;
 
-    --gradient-hero: linear-gradient(135deg, 0 100% 65%, 10 95% 70%);
-    --gradient-subtle: linear-gradient(180deg, 220 27% 8%, 220 27% 12%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 100% 65%), hsl(10 95% 70%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 27% 8%), hsl(220 27% 12%));
     --shadow-soft: 0 4px 20px -4px hsl(0 100% 65% / 0.25);
     --shadow-glow: 0 0 40px hsl(0 100% 65% / 0.3);
     --code-bg: 220 13% 14%;
