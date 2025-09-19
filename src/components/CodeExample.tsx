@@ -4,16 +4,19 @@ import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 const CodeExample = () => {
   const codeString = `import io.jeamlit.core.Jt;
 
-public class MyApp {
-  public static void main(String[] args) {
-    double value = Jt.slider("Temperature")
-      .min(0)
-      .max(100) 
-      .value(50)
-      .use();
-    Jt.text("Temperature: " + value).use();
-  }
-}`;
+  public class MyApp {
+    public static void main(String[] args) {
+      double temp = Jt.slider("Temperature °C").use();
+
+      if (temp > 30) {
+        Jt.markdown("🔥 **Too Hot!**").use();
+      } else if (temp < 10) {
+        Jt.markdown("❄️ **Too Cold!**").use();
+      } else {
+        Jt.text("✅ Perfect!").use();
+      }
+    }
+  }`;
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
