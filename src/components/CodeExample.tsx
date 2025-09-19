@@ -87,7 +87,7 @@ public class MyApp {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Deploy Instantly</h3>
-                <p className="text-muted-foreground">Run your app and share it with the world in minutes. <br/> Run your app standalone or embedded in your existing application.</p>
+                <p className="text-muted-foreground">Run your app and share it with the world in minutes. <br/> Run your app standalone or embedded in your framework.</p>
               </div>
             </div>
           </div>
