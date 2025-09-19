@@ -14,95 +14,14 @@ const Hero = () => {
             </h1>
           </div>
           
-          {/* Scenic Mountain Background */}
-          <div className="relative">
-            <div className="absolute inset-0 -z-10 overflow-hidden">
-              <svg 
-                viewBox="0 0 1200 500" 
-                className="w-full h-full"
-                preserveAspectRatio="none"
-              >
-                {/* Sky gradient */}
-                <defs>
-                  <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(200 40% 95%)" />
-                    <stop offset="100%" stopColor="hsl(210 30% 85%)" />
-                  </linearGradient>
-                  <linearGradient id="mountain1" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(210 20% 75%)" />
-                    <stop offset="100%" stopColor="hsl(210 25% 65%)" />
-                  </linearGradient>
-                  <linearGradient id="mountain2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(200 30% 70%)" />
-                    <stop offset="100%" stopColor="hsl(200 35% 60%)" />
-                  </linearGradient>
-                  <linearGradient id="mountain3" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(150 25% 65%)" />
-                    <stop offset="100%" stopColor="hsl(150 30% 55%)" />
-                  </linearGradient>
-                  <linearGradient id="mountain4" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(140 35% 60%)" />
-                    <stop offset="100%" stopColor="hsl(140 40% 45%)" />
-                  </linearGradient>
-                </defs>
-                
-                {/* Sky background */}
-                <rect width="1200" height="500" fill="url(#skyGradient)" />
-                
-                {/* Far background mountains (lightest) */}
-                <path 
-                  d="M0,500 L0,200 L200,120 L400,160 L600,100 L800,140 L1000,80 L1200,110 L1200,500 Z" 
-                  fill="url(#mountain1)"
-                  opacity="0.6"
-                />
-                
-                {/* Second layer mountains */}
-                <path 
-                  d="M0,500 L0,250 L150,180 L350,220 L500,150 L700,200 L900,130 L1100,170 L1200,140 L1200,500 Z" 
-                  fill="url(#mountain2)"
-                  opacity="0.7"
-                />
-                
-                {/* Third layer mountains */}
-                <path 
-                  d="M0,500 L0,300 L120,230 L300,280 L450,210 L650,260 L850,190 L1050,240 L1200,200 L1200,500 Z" 
-                  fill="url(#mountain3)"
-                  opacity="0.8"
-                />
-                
-                {/* Foreground mountains (darkest) */}
-                <path 
-                  d="M0,500 L0,350 L100,300 L250,340 L400,280 L550,320 L700,260 L850,310 L1000,270 L1200,300 L1200,500 Z" 
-                  fill="url(#mountain4)"
-                  opacity="0.9"
-                />
-                
-                {/* Trees silhouettes */}
-                <g opacity="0.6">
-                  {/* Left tree cluster */}
-                  <polygon points="80,400 85,350 90,400" fill="hsl(120 50% 25%)" />
-                  <polygon points="100,420 108,360 116,420" fill="hsl(120 50% 25%)" />
-                  <polygon points="120,410 125,370 130,410" fill="hsl(120 50% 25%)" />
-                  
-                  {/* Right tree cluster */}
-                  <polygon points="1050,430 1058,370 1066,430" fill="hsl(120 50% 25%)" />
-                  <polygon points="1080,420 1088,350 1096,420" fill="hsl(120 50% 25%)" />
-                  <polygon points="1110,440 1115,380 1120,440" fill="hsl(120 50% 25%)" />
-                </g>
-              </svg>
-            </div>
-            
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto relative z-10">
-              Build interactive data applications with Java, effortlessly.
-              <br />
-              <span className="text-primary font-semibold">Streamlit for Java developers.</span>
-            </p>
-            
-            {/* Animated Tramway */}
-            <div className="relative z-10">
-              <AnimatedTramway />
-            </div>
-          </div>
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Build interactive data applications with Java, effortlessly.
+            <br />
+            <span className="text-primary font-semibold">Streamlit for Java developers.</span>
+          </p>
+          
+          {/* Animated Tramway */}
+          <AnimatedTramway />
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
