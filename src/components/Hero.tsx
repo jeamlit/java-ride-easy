@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
           </div>
           
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
             Build interactive data applications with Java, effortlessly.
             <br />
             <span className="text-primary font-semibold">Streamlit for Java developers.</span>
