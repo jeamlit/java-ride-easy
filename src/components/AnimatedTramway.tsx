@@ -1,6 +1,6 @@
 const AnimatedTramway = () => {
   return (
-    <div className="relative w-full h-32 mb-1 overflow-hidden">
+    <div className="relative w-full h-24 mb-0 overflow-hidden">
       
       {/* Cable line at the top */}
       <div className="absolute top-4 left-0 right-0">
@@ -35,10 +35,20 @@ const AnimatedTramway = () => {
 
       {/* Progressive alpha fade edges */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Left fade */}
-        <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-background to-transparent"></div>
-        {/* Right fade */}
-        <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-background to-transparent"></div>
+        {/* Left fade - matches the gradient background */}
+        <div
+          className="absolute left-0 top-0 w-24 h-full"
+          style={{
+            background: 'linear-gradient(to right, hsl(210 40% 98%), transparent)',
+          }}
+        ></div>
+        {/* Right fade - matches the gradient background */}
+        <div
+          className="absolute right-0 top-0 w-24 h-full"
+          style={{
+            background: 'linear-gradient(to left, hsl(210 40% 98%), transparent)',
+          }}
+        ></div>
       </div>
     </div>
   );

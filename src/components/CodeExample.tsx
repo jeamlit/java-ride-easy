@@ -7,7 +7,8 @@ const CodeExample = () => {
 
 public class MyApp {
   public static void main(String[] args) {
-    double temp = Jt.slider("Temperature °C").use();
+    double temp = Jt.slider(
+                    "Temperature °C").use();
 
     if (temp > 30) {
       Jt.markdown("🔥 **Too Hot!**").use();
@@ -24,10 +25,10 @@ public class MyApp {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Simple. Powerful. 
+            Principles
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transform your Java applications into interactive web apps with minimal code.
+            Streamlit-inspired simplicity, now in Java.
           </p>
         </div>
         
@@ -75,8 +76,8 @@ public class MyApp {
                 <span className="text-primary-foreground text-sm">1</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Write Java Code</h3>
-                <p className="text-muted-foreground">Use familiar Java syntax and libraries you already know.</p>
+                <h3 className="text-xl font-semibold mb-2">As simple as a script</h3>
+                <p className="text-xl text-muted-foreground">Break free from boilerplate. Your app is just your logic, running top-to-bottom. See changes instantly with live reloading.</p>
               </div>
             </div>
             
@@ -85,8 +86,8 @@ public class MyApp {
                 <span className="text-primary-foreground text-sm">2</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Add Widgets</h3>
-                <p className="text-muted-foreground">Create sliders, charts, and interactive components effortlessly.</p>
+                <h3 className="text-xl font-semibold mb-2">Interactions made easy</h3>
+                <p className="text-xl text-muted-foreground">Use a widget: it returns its current value. <br/>HTML, CSS, Javascript, event handling, routes, requests? Gone.</p>
               </div>
             </div>
             
@@ -95,8 +96,8 @@ public class MyApp {
                 <span className="text-primary-foreground text-sm">3</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Deploy Instantly</h3>
-                <p className="text-muted-foreground">Run your app and share it with the world in minutes. <br/> Deploy it standalone or embedded in your framework.</p>
+                <h3 className="text-xl font-semibold mb-2">Flexible deployment</h3>
+                <p className="text-xl text-muted-foreground">Run Jeamlit apps standalone or embed them into Spring, Quarkus, or any Java stack.</p>
               </div>
             </div>
           </div>

@@ -7,25 +7,24 @@ const Hero = () => {
     <section className="pt-32 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-subtle">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
-          <div className="inline-flex items-center mb-6">
-            <span className="text-6xl mr-3 transform scale-x-[-1]">🚡</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-              Jeamlit
-            </h1>
-          </div>
-          
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-2 max-w-3xl mx-auto">
-            <span className="text-primary font-semibold">Streamlit for the rest of us: the Java developers.</span>
-            <br />
-            Build interactive data applications with Java, effortlessly.
+
+          <h1 className="whitespace-pre-line mt-0 text-gray-90 mb-6 col-start-1 col-end-13 sm:col-start-1 sm:col-end-13 xl:col-start-3 xl:col-end-11 text-5xl sm:text-7xl md:text-8xl md:leading-none font-bold">
+            A faster way to build data apps in Java.</h1>
+          <p className="text-l sm:text-xl text-muted-foreground mb-2 max-w-3xl mx-auto">
+            or: <span className="text-primary font-semibold italic">Streamlit for the rest of us, the Java developers.</span>
           </p>
-          
+
           {/* Animated Tramway */}
           <AnimatedTramway />
           
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
+            Skip the frontend hassle.<br/>
+            Spin up interactive web apps straight from Java.
+          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              size="lg"
+              size="xl"
               asChild
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-3"
             >
@@ -36,7 +35,7 @@ const Hero = () => {
             </Button>
             
             <Button 
-              size="lg"
+              size="xl"
               variant="outline"
               asChild
               className="text-lg px-8 py-3 border-primary/20"
@@ -51,27 +50,6 @@ const Hero = () => {
                 View on GitHub
               </a>
             </Button>
-          </div>
-        </div>
-        
-        {/* Feature highlights */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16 animate-slide-in">
-          <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
-            <div className="text-3xl mb-4">⚡</div>
-            <h3 className="text-lg font-semibold mb-2">Fast Development</h3>
-            <p className="text-muted-foreground">Create data apps with just a few lines of Java code</p>
-          </div>
-          
-          <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
-            <div className="text-3xl mb-4">☕</div>
-            <h3 className="text-lg font-semibold mb-2">Pure Java</h3>
-            <p className="text-muted-foreground">Harness Java’s proven ecosystem<br/>Seamlessly integrate with your stack</p>
-          </div>
-          
-          <div className="text-center p-6 rounded-lg bg-card shadow-soft hover:shadow-glow transition-all duration-300">
-            <div className="text-3xl mb-4">🧠</div>
-            <h3 className="text-lg font-semibold mb-2">Easy on your brain</h3>
-            <p className="text-muted-foreground">No event handling. No boilerplate. No abstraction. <br/>The simplest reactive model ever.</p>
           </div>
         </div>
       </div>
