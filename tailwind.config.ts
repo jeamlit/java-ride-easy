@@ -105,7 +105,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-in": "slide-in 0.6s ease-out",
         "glow": "glow 2s ease-in-out infinite",
-        "tramway-move": "tramway-move 10s ease-in-out infinite",
+        "tramway-move": "tramway-move 10s linear infinite",
         "float-right": "float-right 4s linear infinite",
         "stream": "stream 0.6s ease-out infinite",
       },
