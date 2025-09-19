@@ -107,7 +107,7 @@ public class MyApp {
             size="lg" 
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8"
           >
-            <a href="https://docs.jeamlit.io">
+            <a href="https://docs.jeamlit.io" target="_blank">
               Get Started
             </a>
           </Button>
