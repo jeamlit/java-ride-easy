@@ -22,17 +22,17 @@ const CodeExample = () => {
             
             <pre className="bg-[hsl(var(--code-bg))] text-[hsl(var(--code-text))] p-6 pt-12 rounded-xl shadow-soft overflow-x-auto">
               <code>{`import io.jeamlit.core.Jt;
-                
-                public class MyApp {
-                    public static void main(String[] args) {
-                        double value = Jt.slider("Temperature")
-                            .min(0)
-                            .max(100)
-                            .value(50)
-                            .use();
-                        Jt.text("Temperature: " + value).use();
-                    }
-                }`}</code>
+
+public class MyApp {
+    public static void main(String[] args) {
+        double value = Jt.slider("Temperature")
+            .min(0)
+            .max(100)
+            .value(50)
+            .use();
+        Jt.text("Temperature: " + value).use();
+    }
+}`}</code>
             </pre>
           </div>
           
