@@ -40,7 +40,7 @@ public class MyApp {
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             
-            <div className="bg-[hsl(var(--code-bg))] p-4 sm:p-6 pt-8 sm:pt-12 rounded-xl shadow-soft overflow-x-auto">
+            <div className="bg-[hsl(var(--code-bg))] p-3 sm:p-6 pt-6 sm:pt-12 rounded-xl shadow-soft overflow-hidden">
               <SyntaxHighlighter
                 language="java"
                 style={oneDark}
@@ -49,14 +49,19 @@ public class MyApp {
                   padding: 0,
                   margin: 0,
                   fontSize: 'inherit',
+                  overflow: 'hidden',
                 }}
                 codeTagProps={{
                   style: {
                     fontSize: 'inherit',
                     fontFamily: 'inherit',
+                    whiteSpace: 'pre-wrap',
+                    wordBreak: 'break-word',
                   }
                 }}
-                className="text-xs sm:text-sm"
+                className="text-[10px] xs:text-xs sm:text-sm leading-tight"
+                wrapLines={true}
+                wrapLongLines={true}
               >
                 {codeString}
               </SyntaxHighlighter>
