@@ -14,14 +14,49 @@ const Hero = () => {
             </h1>
           </div>
           
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Build interactive data applications with Java, effortlessly.
-            <br />
-            <span className="text-primary font-semibold">Streamlit for Java developers.</span>
-          </p>
-          
-          {/* Animated Tramway */}
-          <AnimatedTramway />
+          {/* Data Mountain Background */}
+          <div className="relative">
+            <div className="absolute inset-0 -z-10">
+              <svg 
+                viewBox="0 0 1200 400" 
+                className="w-full h-full opacity-5"
+                preserveAspectRatio="none"
+              >
+                {/* Data visualization mountain shapes */}
+                <path 
+                  d="M0,400 L0,250 L150,200 L300,180 L450,220 L600,160 L750,200 L900,140 L1050,180 L1200,120 L1200,400 Z" 
+                  fill="hsl(var(--primary) / 0.3)"
+                />
+                <path 
+                  d="M0,400 L0,300 L120,260 L240,240 L360,280 L480,220 L600,260 L720,200 L840,240 L960,180 L1080,220 L1200,160 L1200,400 Z" 
+                  fill="hsl(var(--primary) / 0.2)"
+                />
+                {/* Data points */}
+                {Array.from({length: 20}).map((_, i) => (
+                  <circle 
+                    key={i}
+                    cx={i * 60 + 30}
+                    cy={200 + Math.sin(i) * 50}
+                    r="2"
+                    fill="hsl(var(--primary) / 0.4)"
+                    className="animate-pulse"
+                    style={{ animationDelay: `${i * 0.2}s` }}
+                  />
+                ))}
+              </svg>
+            </div>
+            
+            <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto relative z-10">
+              Build interactive data applications with Java, effortlessly.
+              <br />
+              <span className="text-primary font-semibold">Streamlit for Java developers.</span>
+            </p>
+            
+            {/* Animated Tramway */}
+            <div className="relative z-10">
+              <AnimatedTramway />
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 

@@ -20,18 +20,18 @@ const CodeExample = () => {
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             
-            <pre className="bg-[hsl(var(--code-bg))] text-[hsl(var(--code-text))] p-6 pt-12 rounded-xl shadow-soft overflow-x-auto">
-              <code>{`import io.jeamlit.core.Jt;
+            <pre className="bg-[hsl(var(--code-bg))] text-[hsl(var(--code-text))] p-4 sm:p-6 pt-8 sm:pt-12 rounded-xl shadow-soft overflow-x-auto text-xs sm:text-sm">
+              <code className="break-words whitespace-pre-wrap sm:whitespace-pre">{`import io.jeamlit.core.Jt;
 
 public class MyApp {
-    public static void main(String[] args) {
-        double value = Jt.slider("Temperature")
-            .min(0)
-            .max(100)
-            .value(50)
-            .use();
-        Jt.text("Temperature: " + value).use();
-    }
+  public static void main(String[] args) {
+    double value = Jt.slider("Temperature")
+      .min(0)
+      .max(100) 
+      .value(50)
+      .use();
+    Jt.text("Temperature: " + value).use();
+  }
 }`}</code>
             </pre>
           </div>
