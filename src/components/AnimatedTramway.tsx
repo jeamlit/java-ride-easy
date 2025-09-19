@@ -21,14 +21,7 @@ const AnimatedTramway = () => {
           
           {/* Main tramway emoji hanging below the cable */}
           <div className="relative mt-8">
-            <span className="text-4xl transform scale-x-[-1] animate-glow block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
-            
-            {/* Data stream effect behind tramway */}
-            <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 flex space-x-1">
-              <div className="w-1 h-1 bg-primary/60 rounded-full animate-stream" style={{ animationDelay: '0s' }}></div>
-              <div className="w-1 h-1 bg-primary/40 rounded-full animate-stream" style={{ animationDelay: '0.2s' }}></div>
-              <div className="w-1 h-1 bg-primary/20 rounded-full animate-stream" style={{ animationDelay: '0.4s' }}></div>
-            </div>
+            <span className="text-4xl transform scale-x-[-1] block bg-transparent" style={{ textShadow: 'none', filter: 'none', backgroundColor: 'transparent !important', background: 'none' }}>🚡</span>
           </div>
         </div>
       </div>
