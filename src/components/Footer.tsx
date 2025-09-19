@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-border pt-8 text-center">
+        <div className="border-t border-border pt-4 text-center">
           <p className="text-muted-foreground text-sm">
             © 2025 Jeamlit.
           </p>
